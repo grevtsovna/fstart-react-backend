@@ -8,7 +8,6 @@ module.exports = {
   extends: 'eslint:recommended',
   rules: {
     indent: ['error', 2],
-    'linebreak-style': ['error', 'unix'],
     quotes: ['error', 'single'],
     semi: ['error', 'always'],
 
@@ -854,7 +853,7 @@ module.exports = {
 
     // disallow mixed 'LF' and 'CRLF' as linebreaks
     // https://eslint.org/docs/rules/linebreak-style
-    'linebreak-style': ['error', 'unix'],
+    'linebreak-style': ['error', 'windows'],
 
     // require or disallow an empty line between class members
     // https://eslint.org/docs/rules/lines-between-class-members
