@@ -9,6 +9,15 @@ router.get('/', (req, res) => {
   res.json({ status: 'OK', data: collections });
 });
 
+router.get('/:id', (req, res) => {
+  const collection = db
+    .get('collections')
+    .find({ id: req.params.id })
+    .value();
+
+  res.json({ status: 'OK', data: collection });
+});
+
 router.post('/', (req, res, next) => {
   if (req.body.name === '' || typeof req.body.name === 'undefined') {
     next(new Error('INVALID_API_FORMAT'));
