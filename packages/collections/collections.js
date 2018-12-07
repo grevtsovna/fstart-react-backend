@@ -67,4 +67,12 @@ router.patch('/:id/words', (req, res, next) => {
   res.json({ status: 'OK', data: collection });
 });
 
+router.delete('/:id', (req, res) => {
+  db.get('collections')
+    .remove({ id: req.params.id })
+    .write();
+
+  res.json({ status: 'OK' });
+});
+
 module.exports = router;
