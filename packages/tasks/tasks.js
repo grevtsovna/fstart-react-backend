@@ -85,7 +85,6 @@ router.patch('/:id', (req, res, next) => {
     .find({ id: req.params.id })
     .assign(req.body)
     .value();
-
   db.write();
 
   res.json({ status: 'OK', data: task });
