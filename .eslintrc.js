@@ -7,9 +7,6 @@ module.exports = {
   },
   extends: 'eslint:recommended',
   rules: {
-    indent: ['error', 2],
-    quotes: ['error', 'single'],
-    semi: ['error', 'always'],
 
     // *** best-practice
     // enforces getter/setter pairs in objects
@@ -689,12 +686,7 @@ module.exports = {
     // require trailing commas in multiline object literals
     'comma-dangle': [
       'error',
-      {
-        arrays: 'always-multiline',
-        objects: 'always-multiline',
-        imports: 'always-multiline',
-        exports: 'always-multiline'
-      }
+      'never'
     ],
 
     // enforce spacing before and after comma
