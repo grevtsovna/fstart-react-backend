@@ -3,6 +3,12 @@ const db = require('../db/db');
 const shortid = require('shortid');
 const moment = require('moment');
 
+router.get('/', (req, res) => {
+  const collections = db.get('collections').value();
+
+  res.json({ status: 'OK', data: collections });
+});
+
 router.post('/', (req, res, next) => {
   if (req.body.name === '' || typeof req.body.name === 'undefined') {
     next(new Error('INVALID_API_FORMAT'));
