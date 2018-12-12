@@ -1,4 +1,23 @@
 {
   "words": [],
-  "collections": []
+  "collections": [
+    {
+      "id": "WcgTRRHav",
+      "name": "Lektion 2. Lernwortschatz",
+      "words": [],
+      "timestamp": 1544607255
+    },
+    {
+      "id": "9tmGZJvmp",
+      "name": "Lektion 3. Lernwortschatz",
+      "words": [],
+      "timestamp": 1544607266
+    },
+    {
+      "id": "-q-ZqIbOx",
+      "name": "Lektsion 7. Lernwortschatz",
+      "words": [],
+      "timestamp": 1544607280
+    }
+  ]
 }
