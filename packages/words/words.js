@@ -1,92 +1,44 @@
 const router = require('express').Router();
 const db = require('../db/db');
-
-const creaateWordObject = word => ({
-  id: String(Math.random()
-    .toString(16)
-    .split('.'[1])),
-  word: word.word,
-  translation: word.translation,
-  color: 'transparent',
-  answers: {
-    correct: 0,
-    incorrect: 0,
-  },
-});
-
-router.get('/', (req, res) => {
-  const words = db.get('tasks').value();
-
-  res.json({ status: 'OK', data: words });
-});
+const shortid = require('shortid');
 
 router.get('/:id', (req, res) => {
-  const task = db
-    .get('tasks')
+  const word = db
+    .get('words')
     .find({ id: req.params.id })
     .value();
 
-  res.json({ status: 'OK', data: task });
+  res.json({ status: 'OK', data: word });
 });
 
-// POST /tasks
-router.post('/', (req, res, next) => {
-  // const requestBodySchema = {
-  //   id: 'path-task',
-  //   type: 'object',
-  //   properties: { text: { type: 'string' } },
-  //   required: ['text'],
-  //   additionalProperties: false,
-  // };
-  //
-  // if (!validate(req.body, requestBodySchema).valid) {
-  //   next(new Error('INVALID_API_FORMAT'));
-  // }
+router.post('/', (req, res) => {
+  const word = {
+    id: shortid.generate(),
+    ru: req.body.ru,
+    de: req.body.de
+  };
 
-  const task = newTask(req.body.text);
-
-  console.log(task);
-
-  db
-    .get('tasks')
-    .push(task)
+  db.get('words')
+    .push(word)
     .write();
-
-  res.json({ status: 'OK', data: task });
+  res.json({ status: 'OK', data: word });
 });
 
-// PATCH /tasks/:id
-router.patch('/:id', (req, res, next) => {
-  // const requestBodySchema = {
-  //   id: 'path-task',
-  //   type: 'object',
-  //   properties: {
-  //     text: { type: 'string' },
-  //     isCompleted: { type: 'boolean' },
-  //   },
-  //   additionalProperties: false,
-  //   minProperties: 1,
-  // };
-  //
-  // if (!validate(req.body, requestBodySchema).valid) {
-  //   next(new Error('INVALID_API_FORMAT'));
-  // }
-
-  const task = db
-    .get('tasks')
+router.patch('/:id', (req, res) => {
+  const word = db.get('word')
     .find({ id: req.params.id })
-    .assign(req.body)
+    .assign({
+      ru: req.body.ru,
+      de: req.body.de
+    })
     .value();
-
   db.write();
 
-  res.json({ status: 'OK', data: task });
+  res.json({ status: 'OK', data: word });
 });
 
-// DELETE /tasks/:id
 router.delete('/:id', (req, res) => {
-  db
-    .get('tasks')
+  db.get('words')
     .remove({ id: req.params.id })
     .write();
 
