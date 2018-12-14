@@ -1,15 +1,88 @@
 {
   "words": [
     {
-      "id": "xsSJWdFj3",
-      "ru": "123"
+      "id": "ixyacF--X",
+      "ru": "000",
+      "de": "000"
+    },
+    {
+      "id": "oaMja82lF",
+      "ru": "1111",
+      "de": "1111"
+    },
+    {
+      "id": "NT-hBNamV",
+      "ru": "000",
+      "de": "00"
+    },
+    {
+      "id": "Yg58Pl4I8",
+      "ru": "1",
+      "de": "1"
+    },
+    {
+      "id": "gZTkSryqE",
+      "ru": "111",
+      "de": "1"
+    },
+    {
+      "id": "mN2HcloOr",
+      "ru": "222",
+      "de": "2"
+    },
+    {
+      "id": "6RcWY3dhi",
+      "ru": "34",
+      "de": "4"
+    },
+    {
+      "id": "WgOQUlVRg",
+      "ru": "34",
+      "de": "1"
+    },
+    {
+      "id": "dpJJkfSm7",
+      "ru": "12",
+      "de": "1"
+    },
+    {
+      "id": "BkkRwWqdV",
+      "ru": "12",
+      "de": "1ii"
+    },
+    {
+      "id": "bAzNqN3Fk",
+      "ru": "gf",
+      "de": "g"
     }
   ],
   "collections": [
     {
       "id": "WcgTRRHav",
       "name": "Lektion 2. Lernwortschatz",
-      "words": [],
+      "words": [
+        {
+          "id": "6RcWY3dhi",
+          "ru": "34",
+          "de": "4"
+        },
+        {
+          "id": "WgOQUlVRg",
+          "ru": "34",
+          "de": "1"
+        },
+        {
+          "id": "dpJJkfSm7",
+          "ru": "12",
+          "de": "1"
+        },
+        {
+          "id": "BkkRwWqdV",
+          "ru": "12",
+          "de": "1ii"
+        },
+        "bAzNqN3Fk"
+      ],
       "timestamp": 1544607255
     },
     {
