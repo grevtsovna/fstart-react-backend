@@ -21,9 +21,7 @@ router.get('/:id', (req, res) => {
       .value();
   });
 
-  collection.words = words;
-
-  res.json({ status: 'OK', data: collection });
+  res.json({ status: 'OK', data: { collection, words } });
 });
 
 router.get('/:id/words', (req, res) => {
@@ -87,12 +85,7 @@ router.patch('/:id/words', (req, res, next) => {
 
   collection.words.push(req.body.word);
 
-  // Если тут написать console.log(collection.words) - все работает
-
-  db.get('collections')
-    .find({ id: req.params.id })
-    .assign({ words: collection.words })
-    .write();
+  db.write();
 
   const words = collection.words.map((wordId) => {
     return db.get('words')

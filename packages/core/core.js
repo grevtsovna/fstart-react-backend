@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const error = require('../error/error');
 const collectionsRoutes = require('../collections/collections');
 const wordsRoutes = require('../words/words');
+const testsRoutes = require('../tests/tests');
 
 const app = express();
 
@@ -16,10 +17,11 @@ app.use(cookieParser());
 app.use((req, res, next) => {
   setTimeout(() => {
     next();
-  }, 2000);
+  }, 500);
 });
 app.use('/api/v1/collections', collectionsRoutes);
 app.use('/api/v1/words', wordsRoutes);
+app.use('/api/v1/tests', testsRoutes);
 
 app.use((req, res) => {
   res.json({ status: 'BAD_REQUEST', messages: [error({ code: 'BAD_REQUEST' })] });
