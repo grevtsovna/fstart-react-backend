@@ -29,4 +29,14 @@ router.get('/:id', (req, res) => {
   res.json({status: 'OK', data: testData});
 });
 
+router.post('/check', (req, res) => {
+  const word = db.get('words')
+    .find({ id: req.body.id })
+    .value();
+
+  const isCorrect = word.ru === req.body.answer;
+
+  res.json({ status: 'OK', data: isCorrect });
+});
+
 module.exports = router;
