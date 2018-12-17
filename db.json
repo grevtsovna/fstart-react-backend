@@ -109,6 +109,61 @@
       "id": "8iilnRQSu",
       "ru": "hghf",
       "de": "gt"
+    },
+    {
+      "id": "Xyfe0ShpP",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "lUmMW3xTj",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "Ro8VJFiVt",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "nx-aSxmAj",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "rp3QylSNO",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "ir2RLjmgi",
+      "ru": "teset",
+      "de": "test"
+    },
+    {
+      "id": "ZcUS4OfRT",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "8I-bCgTHg",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "efK7LwDtM",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "NxRpo00Tu",
+      "ru": "test",
+      "de": "test"
+    },
+    {
+      "id": "3_HWzmSzr",
+      "ru": "test",
+      "de": "test"
     }
   ],
   "collections": [
@@ -122,14 +177,26 @@
         "bSHRLYdp9",
         "ETC5bUXGw",
         "JO56rQsSW",
-        "8iilnRQSu"
+        "8iilnRQSu",
+        "Xyfe0ShpP",
+        "lUmMW3xTj",
+        "Ro8VJFiVt",
+        "nx-aSxmAj",
+        "rp3QylSNO",
+        "ir2RLjmgi",
+        "ZcUS4OfRT",
+        "8I-bCgTHg",
+        "efK7LwDtM",
+        "NxRpo00Tu"
       ],
       "timestamp": 1544607255
     },
     {
       "id": "9tmGZJvmp",
       "name": "Lektion 3. Lernwortschatz",
-      "words": [],
+      "words": [
+        "3_HWzmSzr"
+      ],
       "timestamp": 1544607266
     },
     {
