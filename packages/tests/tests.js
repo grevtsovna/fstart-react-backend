@@ -6,8 +6,8 @@ router.get('/:id', (req, res) => {
   const wordsId = db.get('collections')
     .find({ id: req.params.id })
     .get('words')
-    .shuffle()
     .take(5)
+    .shuffle()
     .value();
 
   const words = wordsId.map((wordId) => (

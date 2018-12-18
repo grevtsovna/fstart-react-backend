@@ -97,11 +97,24 @@ router.patch('/:id/words', (req, res, next) => {
 });
 
 router.delete('/:id', (req, res) => {
-  db.get('collections')
-    .remove({ id: req.params.id })
-    .write();
+  const id = req.params.id;
+  const collection = db.get('collections')
+    .find({ id: req.params.id });
 
-  res.json({ status: 'OK' });
+  const words = collection.get('words').value();
+
+  if (words !== undefined) {
+    words.forEach((word) => {
+      console.log(word);
+      db.get('words')
+        .remove({ id: word })
+        .write();
+    });
+  }
+
+  collection.remove().write();
+
+  res.json({ status: 'OK', data: { id: req.params.id } });
 });
 
 module.exports = router;
