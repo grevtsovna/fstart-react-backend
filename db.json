@@ -184,11 +184,6 @@
       "id": "gc_jGKBNw",
       "ru": "test5",
       "de": "test5"
-    },
-    {
-      "id": "rsr_AotMK",
-      "ru": "123",
-      "de": "123"
     }
   ],
   "collections": [
@@ -209,23 +204,6 @@
       "name": "Lektsion 7. Lernwortschatz",
       "words": [],
       "timestamp": 1544607280
-    },
-    {
-      "id": "Ay7HQLyjY",
-      "name": "test",
-      "words": [
-        "rsr_AotMK"
-      ],
-      "timestamp": 1545049792
-    },
-    {
-      "id": "FT61cnN05",
-      "name": "del test",
-      "words": [
-        "b_-bNfpij",
-        "FFPKYEdIp"
-      ],
-      "timestamp": 1545055565
     }
   ]
 }
