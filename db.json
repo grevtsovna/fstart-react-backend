@@ -164,6 +164,24 @@
       "id": "99NSDKW6N",
       "ru": "test1",
       "de": "test1"
+    },
+    {
+      "id": "vuw6E1cf3",
+      "ru": "stat1",
+      "de": "stat1",
+      "statistics": {
+        "success": 1,
+        "fail": 1
+      }
+    },
+    {
+      "id": "Po8bhPCH-",
+      "ru": "stat2",
+      "de": "stat2",
+      "statistics": {
+        "success": 0,
+        "fail": 2
+      }
     }
   ],
   "collections": [
@@ -180,6 +198,15 @@
       "name": "Lektsion 7. Lernwortschatz",
       "words": [],
       "timestamp": 1544607280
+    },
+    {
+      "id": "v1AUqC3rc",
+      "name": "test",
+      "words": [
+        "vuw6E1cf3",
+        "Po8bhPCH-"
+      ],
+      "timestamp": 1545315670
     }
   ]
 }

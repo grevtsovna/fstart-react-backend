@@ -27,15 +27,21 @@ router.get('/:id', (req, res) => {
     answers: _([...answers, word.ru]).shuffle()
   }));
 
-  res.json({status: 'OK', data: testData});
+  res.json({ status: 'OK', data: testData });
 });
 
 router.post('/check', (req, res) => {
   const word = db.get('words')
-    .find({ id: req.body.id })
-    .value();
+    .find({ id: req.body.id });
 
-  const isCorrect = word.ru === req.body.answer;
+  const wordValue = word.value();
+  const isCorrect = wordValue.ru === req.body.answer;
+
+  if (isCorrect) {
+    word.get('statistics').update('success', quantity => quantity + 1).write();
+  } else {
+    word.get('statistics').update('fail', quantity => quantity + 1).write();
+  }
 
   res.json({ status: 'OK', data: isCorrect });
 });

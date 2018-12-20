@@ -15,7 +15,11 @@ router.post('/', (req, res) => {
   const word = {
     id: shortid.generate(),
     ru: req.body.ru,
-    de: req.body.de
+    de: req.body.de,
+    statistics: {
+      success: 0,
+      fail: 0
+    }
   };
 
   db.get('words')
@@ -48,7 +52,7 @@ router.delete('/:id', (req, res) => {
     .remove(id => req.params.id === id)
     .write();
 
-  res.json({ status: 'OK' });
+  res.json({ status: 'OK', deletedWordId: req.params.id });
 });
 
 module.exports = router;
