@@ -42,6 +42,12 @@ router.delete('/:id', (req, res) => {
     .remove({ id: req.params.id })
     .write();
 
+  db.get('collections')
+    .find({ id: req.body.collectionId })
+    .get('words')
+    .remove(id => req.params.id === id)
+    .write();
+
   res.json({ status: 'OK' });
 });
 

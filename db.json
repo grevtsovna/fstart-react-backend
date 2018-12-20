@@ -161,41 +161,17 @@
       "de": "test"
     },
     {
-      "id": "3_HWzmSzr",
-      "ru": "test",
-      "de": "test"
-    },
-    {
-      "id": "0YLWP-GnF",
-      "ru": "test2",
-      "de": "test2"
-    },
-    {
-      "id": "1YdmUhs7A",
-      "ru": "test3",
-      "de": "test3"
-    },
-    {
-      "id": "eE7GyjtYH",
-      "ru": "test4",
-      "de": "test4"
-    },
-    {
-      "id": "gc_jGKBNw",
-      "ru": "test5",
-      "de": "test5"
+      "id": "99NSDKW6N",
+      "ru": "test1",
+      "de": "test1"
     }
   ],
   "collections": [
     {
       "id": "9tmGZJvmp",
-      "name": "Lektion 3. Lernwortschatz",
+      "name": "Lektion 3. Lernwortschatzgfg",
       "words": [
-        "3_HWzmSzr",
-        "0YLWP-GnF",
-        "1YdmUhs7A",
-        "eE7GyjtYH",
-        "gc_jGKBNw"
+        "99NSDKW6N"
       ],
       "timestamp": 1544607266
     },
