@@ -170,8 +170,8 @@
       "ru": "stat1",
       "de": "stat1",
       "statistics": {
-        "success": 1,
-        "fail": 1
+        "success": 6,
+        "fail": 3
       }
     },
     {
@@ -179,8 +179,8 @@
       "ru": "stat2",
       "de": "stat2",
       "statistics": {
-        "success": 0,
-        "fail": 2
+        "success": 5,
+        "fail": 4
       }
     }
   ],
