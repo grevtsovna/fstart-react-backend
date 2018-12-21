@@ -1,97 +1,93 @@
 {
   "words": [
     {
-      "id": "vuw6E1cf3",
-      "ru": "stat1",
-      "de": "stat1",
-      "statistics": {
-        "success": 7,
-        "fail": 4
-      }
-    },
-    {
-      "id": "Po8bhPCH-",
-      "ru": "stat2",
-      "de": "stat2",
-      "statistics": {
-        "success": 6,
-        "fail": 5
-      }
-    },
-    {
-      "id": "zJz1XNmtD",
-      "ru": "stat3",
-      "de": "stat3",
-      "statistics": {
-        "success": 1,
-        "fail": 1
-      }
-    },
-    {
-      "id": "beVU8hyXR",
-      "ru": "stat4",
-      "de": "stat4",
+      "id": "2xDFf9QKB",
+      "ru": "die Stelle, -n",
+      "de": "место, должность",
       "statistics": {
         "success": 2,
-        "fail": 1
-      }
-    },
-    {
-      "id": "kCDlmIYjE",
-      "ru": "stat5",
-      "de": "stat5",
-      "statistics": {
-        "success": 1,
-        "fail": 1
-      }
-    },
-    {
-      "id": "kehMEnVSH",
-      "ru": "stat6",
-      "de": "stat6",
-      "statistics": {
-        "success": 0,
         "fail": 0
       }
     },
     {
-      "id": "NsWq3EUb0",
-      "ru": "stat7",
-      "de": "stat7",
+      "id": "Ih1rfaVmm",
+      "ru": "arbeitlos",
+      "de": "безработный",
+      "statistics": {
+        "success": 1,
+        "fail": 1
+      }
+    },
+    {
+      "id": "liObbApVT",
+      "ru": "der Friseur, -e",
+      "de": "парикмахер",
+      "statistics": {
+        "success": 1,
+        "fail": 0
+      }
+    },
+    {
+      "id": "9xadqix6x",
+      "ru": "die Ausbildung, -en",
+      "de": "обучение, образование",
+      "statistics": {
+        "success": 1,
+        "fail": 0
+      }
+    },
+    {
+      "id": "A4coaIT2i",
+      "ru": "der Beruf, -e",
+      "de": "профессия",
+      "statistics": {
+        "success": 1,
+        "fail": 0
+      }
+    },
+    {
+      "id": "Sh4rFJIOQ",
+      "ru": "die Hochschule, -n",
+      "de": "вуз",
+      "statistics": {
+        "success": 1,
+        "fail": 0
+      }
+    },
+    {
+      "id": "kgYrCxGur",
+      "ru": "die Schule, -n",
+      "de": "школа",
       "statistics": {
         "success": 0,
+        "fail": 1
+      }
+    },
+    {
+      "id": "x_rZm4u8-",
+      "ru": "allein leben",
+      "de": "жить одному",
+      "statistics": {
+        "success": 1,
         "fail": 0
       }
     }
   ],
   "collections": [
     {
-      "id": "9tmGZJvmp",
-      "name": "Lektion 3. Lernwortschatzgfg",
+      "id": "N09lKhbuG",
+      "name": "Lektion 2. Lernwortschatz",
       "words": [
-        "99NSDKW6N"
+        "2xDFf9QKB",
+        "Ih1rfaVmm",
+        "liObbApVT",
+        "9xadqix6x",
+        "A4coaIT2i",
+        "Sh4rFJIOQ",
+        "kgYrCxGur",
+        "x_rZm4u8-"
       ],
-      "timestamp": 1544607266
-    },
-    {
-      "id": "-q-ZqIbOx",
-      "name": "Lektsion 7. Lernwortschatz",
-      "words": [],
-      "timestamp": 1544607280
-    },
-    {
-      "id": "v1AUqC3rc",
-      "name": "test",
-      "words": [
-        "vuw6E1cf3",
-        "Po8bhPCH-",
-        "zJz1XNmtD",
-        "beVU8hyXR",
-        "kCDlmIYjE",
-        "kehMEnVSH",
-        "NsWq3EUb0"
-      ],
-      "timestamp": 1545315670
+      "timestamp": 1545384206
     }
   ]
 }

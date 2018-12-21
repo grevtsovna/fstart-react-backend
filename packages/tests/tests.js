@@ -21,8 +21,7 @@ router.get('/:id', (req, res) => {
     .value();
 
   const testData = readyWords.map((word) => {
-    const answers = db.get('words')
-      .filter(({ id }) => id !== word.id)
+    const answers = _(words).filter(({ id }) => id !== word.id)
       .map('ru')
       .shuffle()
       .take(3)
