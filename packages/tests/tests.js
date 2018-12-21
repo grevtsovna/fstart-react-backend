@@ -6,8 +6,6 @@ router.get('/:id', (req, res) => {
   const wordsId = db.get('collections')
     .find({ id: req.params.id })
     .get('words')
-    .take(5)
-    .shuffle()
     .value();
 
   const words = wordsId.map((wordId) => (
@@ -16,16 +14,26 @@ router.get('/:id', (req, res) => {
       .value()
   ));
 
-  const answers = db.get('words')
-    .map('ru')
-    .take(3)
+  const readyWords = _(words)
+    .sortBy(({ statistics }) => statistics.fail + statistics.success)
+    .take(5)
+    .shuffle()
     .value();
 
-  const testData = words.map((word) => ({
-    id: word.id,
-    de: word.de,
-    answers: _([...answers, word.ru]).shuffle()
-  }));
+  const testData = readyWords.map((word) => {
+    const answers = db.get('words')
+      .filter(({ id }) => id !== word.id)
+      .map('ru')
+      .shuffle()
+      .take(3)
+      .value();
+
+    return {
+      id: word.id,
+      de: word.de,
+      answers: _([...answers, word.ru]).shuffle()
+    };
+  });
 
   res.json({ status: 'OK', data: testData });
 });
