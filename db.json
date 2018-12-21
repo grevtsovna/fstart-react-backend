@@ -24,7 +24,7 @@
       "de": "парикмахер",
       "statistics": {
         "success": 1,
-        "fail": 0
+        "fail": 1
       }
     },
     {
@@ -32,7 +32,7 @@
       "ru": "die Ausbildung, -en",
       "de": "обучение, образование",
       "statistics": {
-        "success": 1,
+        "success": 2,
         "fail": 0
       }
     },
@@ -42,7 +42,7 @@
       "de": "профессия",
       "statistics": {
         "success": 1,
-        "fail": 0
+        "fail": 1
       }
     },
     {
@@ -51,7 +51,7 @@
       "de": "вуз",
       "statistics": {
         "success": 1,
-        "fail": 0
+        "fail": 1
       }
     },
     {
@@ -60,7 +60,7 @@
       "de": "школа",
       "statistics": {
         "success": 0,
-        "fail": 1
+        "fail": 2
       }
     },
     {
@@ -69,6 +69,87 @@
       "de": "жить одному",
       "statistics": {
         "success": 1,
+        "fail": 0
+      }
+    },
+    {
+      "id": "0MDERpEiz",
+      "ru": "bar stool",
+      "de": "Барный стул",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "gdaXytRmD",
+      "ru": "bureau",
+      "de": "письменный стол",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "yjemM5GPG",
+      "ru": "carpet",
+      "de": "ковер",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "3ZxwPVgqI",
+      "ru": "chandelier",
+      "de": "люстра",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "IeZm9z0gJ",
+      "ru": "chest",
+      "de": "ящик",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "8RdUrWGBH",
+      "ru": "clock",
+      "de": "часы",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "NrvYK6e5w",
+      "ru": "couch",
+      "de": "диван",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "gTnA8b0eU",
+      "ru": "curtains",
+      "de": "шторы",
+      "statistics": {
+        "success": 0,
+        "fail": 0
+      }
+    },
+    {
+      "id": "NkEg8bGdT",
+      "ru": "desk",
+      "de": "письменный стол",
+      "statistics": {
+        "success": 0,
         "fail": 0
       }
     }
@@ -88,6 +169,29 @@
         "x_rZm4u8-"
       ],
       "timestamp": 1545384206
+    },
+    {
+      "id": "YAAxEfjQt",
+      "name": "Furniture",
+      "words": [
+        "0MDERpEiz",
+        "gdaXytRmD",
+        "yjemM5GPG",
+        "3ZxwPVgqI",
+        "IeZm9z0gJ",
+        "8RdUrWGBH",
+        "NrvYK6e5w"
+      ],
+      "timestamp": 1545385348
+    },
+    {
+      "id": "KGXNgJbES",
+      "name": "Мало слов",
+      "words": [
+        "gTnA8b0eU",
+        "NkEg8bGdT"
+      ],
+      "timestamp": 1545385497
     }
   ]
 }
